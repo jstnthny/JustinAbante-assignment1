@@ -13,7 +13,7 @@ $header: #f5c8cf;
 
 .wrapper {
   width: 90%;
-  max-width: 1600px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -49,7 +49,7 @@ nav ul {
   }
 }
 
-.header-flex-container {
+.flex-container {
   display: flex;
 }
 
@@ -102,4 +102,31 @@ h2 {
 
 .coffee-appliances {
   display: flex;
+  margin-top: 60px;
+}
+
+.coffee-appliances-text {
+  margin-left: 40px;
+}
+
+.coffee-appliances-text h2 {
+  text-align: left;
+}
+
+.coffee-appliances-text p {
+  font-family: $secondaryFont;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 0.2px;
+}
+
+.coffee-appliances a {
+  padding: 10px 12px;
+  text-decoration: none;
+  background-color: #042259;
+  font-family: $primaryFont;
+  font-size: 20px;
+  line-height: 29px;
+  color: #fff;
+  text-align: center;
 }
