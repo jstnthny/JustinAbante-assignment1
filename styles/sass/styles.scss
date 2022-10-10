@@ -1,0 +1,105 @@
+@use "setup";
+
+// $paleRose: #f5c8cf;
+// $lightPink: #b2eeb2;
+
+// Fonts
+$primaryFont: "Emblema One", cursive;
+$secondaryFont: "Barlow", sans-serif;
+$navFont: "Catamaran", sans-serif;
+$header: #f5c8cf;
+
+// General
+
+.wrapper {
+  width: 90%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// Navbar & Header
+header {
+  background: url(../../assets/header-group-appliances.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: $header;
+}
+
+nav ul {
+  display: flex;
+  justify-content: right;
+  padding: 20px 0;
+  li {
+    margin-right: 20px;
+    font-family: $navFont;
+    font-size: 18px;
+    line-height: 29px;
+  }
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #042259;
+  }
+}
+
+.header-flex-container {
+  display: flex;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: $primaryFont;
+  font-size: 104.6px;
+  line-height: 87.3px;
+  color: #1d81cc;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  span::before {
+    content: "\a";
+    white-space: pre;
+  }
+}
+
+.header-text p {
+  font-family: $secondaryFont;
+  font-size: 37.2px;
+  text-transform: lowercase;
+  line-height: 37.9px;
+  letter-spacing: 0.3px;
+  color: #042259;
+}
+
+// News Section
+
+.news-section {
+  background-color: #fcdde2;
+  padding: 20px 0;
+}
+
+h2 {
+  margin-top: 0;
+  font-family: $primaryFont;
+  color: #1d81cc;
+  font-size: 42px;
+  text-align: center;
+}
+
+.image-carousel ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.coffee-appliances {
+  display: flex;
+}
