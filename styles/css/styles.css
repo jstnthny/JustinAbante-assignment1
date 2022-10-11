@@ -364,4 +364,44 @@ h2 {
   line-height: 29px;
   color: #fff;
   text-align: center;
+}
+
+.smoothies-section {
+  background-color: #f0f5ff;
+}
+
+.smoothies-flex-container {
+  display: flex;
+}
+
+.smoothies-text-container {
+  margin: 100px 20px 0 0;
+  width: 80%;
+}
+.smoothies-text-container h2 {
+  text-align: left;
+  text-transform: uppercase;
+}
+.smoothies-text-container p {
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 0.2px;
+}
+.smoothies-text-container a {
+  padding: 10px 12px;
+  text-decoration: none;
+  background-color: #f5c8cf;
+  font-family: "Emblema One", cursive;
+  font-size: 20px;
+  line-height: 29px;
+  color: #042259;
+  text-align: center;
+}
+
+.smoothies-img-container {
+  width: 100%;
+}
+.smoothies-img-container img {
+  max-width: 100%;
 }/*# sourceMappingURL=styles.css.map */
