@@ -1,16 +1,19 @@
 @use "setup";
 
-// $paleRose: #f5c8cf;
-// $lightPink: #b2eeb2;
+//Colors
+$marine: #042259;
+$paleRose: #f5c8cf;
+$paleGrey: #f0f5ff;
+$lightPink: #fcdde2;
+$darkerGrey: #1f2022;
+$waterBlue: #1d81cc;
 
 // Fonts
 $primaryFont: "Emblema One", cursive;
 $secondaryFont: "Barlow", sans-serif;
 $navFont: "Catamaran", sans-serif;
-$header: #f5c8cf;
 
 // General
-
 html {
   font-size: 125%; //20px
   line-height: 1.15;
@@ -34,7 +37,7 @@ header {
   height: 100vh;
   background-repeat: no-repeat;
   background-position: right;
-  background-color: $header;
+  background-color: $paleRose;
 }
 
 nav ul {
@@ -50,7 +53,7 @@ nav ul {
   a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #042259;
+    color: $marine;
   }
 }
 
@@ -67,7 +70,7 @@ h1 {
   font-family: $primaryFont;
   font-size: 5.23rem;
   line-height: 87.3px;
-  color: #1d81cc;
+  color: $waterBlue;
   margin-bottom: 0;
   text-transform: uppercase;
 }
@@ -78,20 +81,20 @@ h1 {
   text-transform: lowercase;
   line-height: 37.9px;
   letter-spacing: 0.3px;
-  color: #042259;
+  color: $marine;
 }
 
 // News Section
 
 .news-section {
-  background-color: #fcdde2;
+  background-color: $lightPink;
   padding: 20px 0;
 }
 
 h2 {
   margin-top: 0;
   font-family: $primaryFont;
-  color: #1d81cc;
+  color: $waterBlue;
   font-size: 42px;
   text-align: center;
 }
@@ -124,7 +127,7 @@ h2 {
 .coffee-appliances a {
   padding: 10px 12px;
   text-decoration: none;
-  background-color: #042259;
+  background-color: $marine;
   font-family: $primaryFont;
   font-size: 20px;
   line-height: 29px;
@@ -135,7 +138,7 @@ h2 {
 // Smoothies Section
 
 .smoothies-section {
-  background-color: #f0f5ff;
+  background-color: $paleGrey;
 }
 
 .smoothies-flex-container {
@@ -163,11 +166,11 @@ h2 {
   a {
     padding: 10px 12px;
     text-decoration: none;
-    background-color: #f5c8cf;
+    background-color: $paleRose;
     font-family: $primaryFont;
     font-size: 20px;
     line-height: 29px;
-    color: #042259;
+    color: $marine;
     text-align: center;
   }
 }
@@ -182,7 +185,7 @@ h2 {
 // Features Section
 
 .features {
-  background-color: #fcdde2;
+  background-color: $lightPink;
   ul {
     display: flex;
     justify-content: space-around;
@@ -191,7 +194,7 @@ h2 {
       display: block;
       text-align: center;
       font-size: 35px;
-      color: #042259;
+      color: $marine;
     }
 
     a {
@@ -204,7 +207,7 @@ h4 {
   font-size: 31.2px;
   text-align: center;
   margin: 0;
-  color: #1d81cc;
+  color: $waterBlue;
 }
 
 // Contact Section
@@ -221,14 +224,14 @@ h4 {
 h3 {
   font-family: $primaryFont;
   font-size: 25px;
-  color: #1d81cc;
+  color: $waterBlue;
 }
 
 input {
   font-family: $secondaryFont;
   text-transform: lowercase;
   padding: 10px;
-  border: 1px solid #f5c8cf;
+  border: 1px solid $paleRose;
 }
 
 input,
@@ -239,11 +242,11 @@ textarea {
 button {
   padding: 10px 12px;
   text-decoration: none;
-  background-color: #f5c8cf;
+  background-color: $paleRose;
   font-family: $primaryFont;
   font-size: 20px;
   line-height: 29px;
-  color: #042259;
+  color: $marine;
   text-align: center;
   border: none;
 }
@@ -268,7 +271,7 @@ button {
 // Footer
 
 footer {
-  background-color: #042259;
+  background-color: $marine;
   p {
     font-family: $secondaryFont;
     color: #fff;
@@ -322,7 +325,7 @@ footer {
   // Smoothies Section
 
   .smoothies-section {
-    background-color: #fcdde2;
+    background-color: $lightPink;
   }
 
   .smoothies-flex-container {
@@ -334,7 +337,7 @@ footer {
   }
 
   .smoothies-text-container a {
-    background-color: #042259;
+    background-color: $marine;
     color: #fff;
     margin: 0 auto;
     display: block;
