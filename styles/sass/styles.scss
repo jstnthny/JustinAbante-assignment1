@@ -11,6 +11,11 @@ $header: #f5c8cf;
 
 // General
 
+html {
+  font-size: 125%; //20px
+  line-height: 1.15;
+}
+
 .wrapper {
   width: 90%;
   max-width: 1300px;
@@ -25,7 +30,7 @@ ul {
 
 // Navbar & Header
 header {
-  background: url(../../assets/header-group-appliances.png);
+  background: url(../assets/header-group-appliances.png);
   height: 100vh;
   background-repeat: no-repeat;
   background-position: right;
@@ -60,20 +65,16 @@ nav ul {
 
 h1 {
   font-family: $primaryFont;
-  font-size: 104.6px;
+  font-size: 5.23rem;
   line-height: 87.3px;
   color: #1d81cc;
   margin-bottom: 0;
   text-transform: uppercase;
-  span::before {
-    content: "\a";
-    white-space: pre;
-  }
 }
 
 .header-text p {
   font-family: $secondaryFont;
-  font-size: 37.2px;
+  font-size: 1.86rem;
   text-transform: lowercase;
   line-height: 37.9px;
   letter-spacing: 0.3px;
@@ -142,8 +143,13 @@ h2 {
 }
 
 .smoothies-text-container {
-  margin: 100px 20px 0 0;
-  width: 80%;
+  margin: 100px 0;
+  width: 100%;
+  h2,
+  p,
+  a {
+    margin-left: 20px;
+  }
   h2 {
     text-align: left;
     text-transform: uppercase;
@@ -170,5 +176,185 @@ h2 {
   width: 100%;
   img {
     max-width: 100%;
+  }
+}
+
+// Features Section
+
+.features {
+  background-color: #fcdde2;
+  ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+    i {
+      display: block;
+      text-align: center;
+      font-size: 35px;
+      color: #042259;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+h4 {
+  font-family: $primaryFont;
+  font-size: 31.2px;
+  text-align: center;
+  margin: 0;
+  color: #1d81cc;
+}
+
+// Contact Section
+
+.contact-flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+  p {
+    font-family: $secondaryFont;
+  }
+}
+
+h3 {
+  font-family: $primaryFont;
+  font-size: 25px;
+  color: #1d81cc;
+}
+
+input {
+  font-family: $secondaryFont;
+  text-transform: lowercase;
+  padding: 10px;
+  border: 1px solid #f5c8cf;
+}
+
+input,
+textarea {
+  background-color: white;
+}
+
+button {
+  padding: 10px 12px;
+  text-decoration: none;
+  background-color: #f5c8cf;
+  font-family: $primaryFont;
+  font-size: 20px;
+  line-height: 29px;
+  color: #042259;
+  text-align: center;
+  border: none;
+}
+
+.contact ul li {
+  font-family: $secondaryFont;
+  text-align: left;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  text-align: right;
+  text-transform: uppercase;
+  h3:first-child {
+    margin-bottom: 0;
+  }
+  .footer-list {
+    margin: 0;
+  }
+}
+
+// Footer
+
+footer {
+  background-color: #042259;
+  p {
+    font-family: $secondaryFont;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+// Media Queries
+
+@media (max-width: 420px) {
+  .wrapper {
+    height: 100%;
+    width: 95%;
+  }
+
+  // Header
+  h1 {
+    font-size: 3.3em;
+    width: 100%;
+    line-height: 1;
+  }
+
+  nav {
+    display: none;
+  }
+
+  // News Section
+
+  .image-carousel ul {
+    flex-direction: column;
+  }
+
+  .coffee-appliances {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .coffee-appliances-text {
+    margin: 0;
+    h2 {
+      text-align: center;
+    }
+    a {
+      display: block;
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  // Smoothies Section
+
+  .smoothies-section {
+    background-color: #fcdde2;
+  }
+
+  .smoothies-flex-container {
+    flex-direction: column;
+  }
+
+  .smoothies-text-container h2 {
+    text-align: center;
+  }
+
+  .smoothies-text-container a {
+    background-color: #042259;
+    color: #fff;
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+    text-align: center;
+  }
+
+  // Features Section
+
+  .features ul {
+    flex-direction: column;
+    padding: 0;
+    li {
+      margin: 50px;
+    }
+  }
+
+  // Footer Section
+
+  .contact-flex {
+    flex-direction: column;
   }
 }

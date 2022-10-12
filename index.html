@@ -10,7 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Barlow&family=Catamaran:wght@600&family=Emblema+One&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/02993d2be8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>Assignment 1</title>
   </head>
   <body>
@@ -26,12 +30,9 @@
         </nav>
         <div class="flex-container">
           <div class="header-text">
-            <h1>Electric <span>Select</span></h1>
+            <h1>Electric Select</h1>
             <p>best home appliances</p>
           </div>
-          <!-- <div class="header-image-container">
-            <img src="./assets/header-group-appliances.png" alt="" />
-          </div> -->
         </div>
       </div>
       <!-- End of wrapper -->
@@ -74,23 +75,105 @@
       </section>
       <!-- End of News Section -->
       <section class="smoothies-section">
-        <div class="wrapper smoothies-flex-container">
-          <div class="smoothies-text-container">
-            <h2>Smoothies Anyone?</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Molestiae, nam totam, quam ipsa ratione repellendus officia quos
-              perspiciatis sequi ex repudiandae nemo quisquam tempora earum
-              inventore quaerat aperiam eius? Voluptate fuga a esse accusantium
-              dolor aliquam deserunt iste, quas aut.
-            </p>
-            <a href="#">Read More</a>
+        <div class="wrapper">
+          <div class="smoothies-flex-container">
+            <div class="smoothies-text-container">
+              <h2>Smoothies Anyone?</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Molestiae, nam totam, quam ipsa ratione repellendus officia quos
+                perspiciatis sequi ex repudiandae nemo quisquam tempora earum
+                inventore quaerat aperiam eius? Voluptate fuga a esse
+                accusantium dolor aliquam deserunt iste, quas aut.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+            <div class="smoothies-img-container">
+              <img src="./assets/right-photo.jpg" alt="" />
+            </div>
           </div>
-          <div class="smoothies-img-container">
-            <img src="./assets/right-photo.jpg" alt="" />
+          <div class="smoothies-flex-container">
+            <div class="smoothies-img-container">
+              <img src="./assets/left-photo.jpg" alt="" />
+            </div>
+            <div class="smoothies-text-container">
+              <h2>New Home, New Appliances</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Molestiae, nam totam, quam ipsa ratione repellendus officia quos
+                perspiciatis sequi ex repudiandae nemo quisquam tempora earum
+                inventore quaerat aperiam eius? Voluptate fuga a esse
+                accusantium dolor aliquam deserunt iste, quas aut.
+              </p>
+              <a href="#">Read More</a>
+            </div>
           </div>
         </div>
       </section>
+      <!-- End of smoothies section -->
+      <section class="features">
+        <div class="wrapper">
+          <ul>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-car"></i>
+                <h4>Shops</h4></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-suitcase"></i>
+                <h4>Jobs</h4></a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-calendar-check"></i>
+                <h4>Events</h4></a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- End of Features Section -->
+      <section class="contact-section">
+        <div class="wrapper contact-flex">
+          <div class="newsletter">
+            <h3>Stay Updated</h3>
+            <p>Subscribe to our newsletter to stay updated</p>
+            <label for="email" class="sr-only">Email Address</label>
+            <input type="email" id="email" placeholder="Email Address" />
+            <button>Subscribe</button>
+          </div>
+          <div class="contact">
+            <h3>Contact</h3>
+            <ul>
+              <li>info@email.com 123 - 456 - 7890</li>
+              <li>123 some road. Toronto ON</li>
+              <li>A5A 5A5, Canada</li>
+            </ul>
+          </div>
+          <ul class="footer-nav">
+            <li>
+              <a href="#"><h3>Home</h3></a></li>
+            </li>
+            <li>
+              <a href="#"><h3 class="footer-list">About</h3></a>
+            </li>
+            <li>
+              <a href="#"><h3 class="footer-list">Blog</h3></a>
+            </li>
+            <li>
+              <a href="#"><h3 class="footer-list">Contact</h3></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <footer>
+        <div class="wrapper">
+          <p>Copyright @ 2019 HackerYou</p>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
